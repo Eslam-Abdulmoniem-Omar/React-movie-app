@@ -1,0 +1,94 @@
+/*===================== GLOBAL RULES =====================*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* background: rgb(0 100 0 / 0.1) !important; */
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --main-color: #032541;
+  --secondary-color: #21d07a;
+  --white: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+}
+
+.btn:hover {
+  background-color: #1aa762;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*========== MEDIA QUERY========== */
+
+/* SMALL */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* MEDIUM */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* LARGE */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
